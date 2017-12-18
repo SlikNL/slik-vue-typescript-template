@@ -1,35 +1,46 @@
-# vue-webpack-boilerplate
+# Vue-TypeScript-Template
+> A simple TypeScript CLI for scaffolding Vue.js projects.
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+### Installation
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
-
-## Documentation
-
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
-- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
-
-## Usage
-
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
+Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm version 3+ and [Git](https://git-scm.com/).
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
-$ cd my-project
-$ npm install
-$ npm run dev
+```
+### Usage
+
+```bash
+vue init SimonZhangITer/vue-typescript-template <project-name>
 ```
 
-This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
+Example:
 
 ``` bash
-$ vue init webpack#develop my-project
+$ vue init SimonZhangITer/vue-typescript-template my-project
 ```
 
-:warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
+The above command pulls the template from here, prompts for some information, and generates the project at `./my-project/`.
 
-The development server will run on port 8080 by default. If that port is already in use on your machine, the next free port will be used.
+### Demo
+> i wrote a [vue-typescript-demo](https://github.com/SimonZhangITer/vue-typescript-dpapp-demo) project for practice, it recorded how I configured it and how to use vue.js with typescript
+
+### In Addition
+
+#### vuex
+> add `vuex` option at initialization time, it will create `src/store` folder, and it had configed, like this:
+
+```
+src
+├──store
+   ├──actions.ts
+   ├──mutations.ts
+   ├──getters.ts
+   ├──types.ts
+```
+
+#### vue-class-component
+> add `vue-class-componet` by default, and vue perfect support for it, it will make your code more flat and beautiful, you will like it.
 
 ## What's Included
 
@@ -57,10 +68,3 @@ The development server will run on port 8080 by default. If that port is already
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
 
-### Fork It And Make Your Own
-
-You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
-```
