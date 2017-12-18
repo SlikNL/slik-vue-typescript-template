@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     {{#lint}}
+    "@types/node": "^8.0.58",
     "babel-eslint": "^7.1.1",
     "eslint": "^3.19.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -71,6 +72,7 @@
     "chai": "^4.1.2",
     "sinon": "^4.0.0",
     "sinon-chai": "^2.8.0",
+    "ts-loader": "^3.2.0",
     "inject-loader": "^3.0.0",
     "babel-plugin-istanbul": "^4.1.1",
     "phantomjs-prebuilt": "^2.1.14",
