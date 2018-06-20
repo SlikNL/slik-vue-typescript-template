@@ -24,6 +24,12 @@
     "target": "es5",
     "moduleResolution": "node",
     "noImplicitAny": true,
+	"alwaysStrict": true,
+	"emitDecoratorMetadata": true,
+	"noEmitOnError": true,
+	"noImplicitThis": true,
+	"noUnusedLocals": true,
+	"strictNullChecks": true,
     "lib": [
       "dom",
       "es5",
