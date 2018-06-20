@@ -1,8 +1,6 @@
 # Slik-Vue-TypeScript-Template
 A Vue / Typescript template for use with the vue-cli. Meant for internal use at Internetbureau Slik. It uses both `TypeScript` and `LESS`.
 
-&nbsp;
-
 # Installation
 
 Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm version 3+ and [Git](https://git-scm.com/).
@@ -10,8 +8,6 @@ Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm ver
 ``` bash
 $ npm install -g vue-cli
 ```
-
-&nbsp;
 
 # Usage
 
@@ -30,8 +26,6 @@ $ npm run dev
 ```
 
 Setup may take a few minutes.. Get a drink.
-
-&nbsp;
 
 # In Addition
 
@@ -60,8 +54,6 @@ src
 ## vue-property-decorator
 `vue-property-decorator` is added by default. It will make it much easier to refracture the code and also easier to add properties like watch to the component classes.
 
-&nbsp;
-
 # What's Included
 
 - `npm run dev`: first-in-class development experience.
@@ -87,8 +79,6 @@ src
   - Works with one command out of the box:
     - Selenium and chromedriver dependencies automatically handled.
     - Automatically spawns the Selenium server.
-
-&nbsp;
 
 &nbsp;
 
