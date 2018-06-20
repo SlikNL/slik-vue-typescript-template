@@ -11,13 +11,13 @@ $ npm install -g vue-cli
 ### Usage
 
 ```bash
-vue init SimonZhangITer/vue-typescript-template <project-name>
+vue init lavandongen/vue-typescript-template <project-name>
 ```
 
 Example:
 
 ``` bash
-$ vue init SimonZhangITer/vue-typescript-template my-project
+$ vue init lavandongen/vue-typescript-template my-project
 ```
 
 The above command pulls the template from here, prompts for some information, and generates the project at `./my-project/`.

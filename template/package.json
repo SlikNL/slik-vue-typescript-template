@@ -29,6 +29,8 @@
     "vue-router": "^3.0.1"{{/router}}
   },
   "devDependencies": {
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
     {{#lint}}
     "@types/node": "^8.0.58",
     "babel-eslint": "^7.1.1",
