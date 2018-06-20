@@ -102,7 +102,7 @@ function lintMsg(data) {
  * @param {Object} data Data from the questionnaire
  */
 function installMsg(data) {
-  return !data.autoInstall ? 'npm install\n npm run dev' : ''
+  return !data.autoInstall ? 'npm install\n   npm run dev' : ''
 }
 
 /**
