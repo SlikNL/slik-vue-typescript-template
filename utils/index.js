@@ -32,7 +32,7 @@ exports.installDependencies = function installDependencies(
 ) {
   console.log(`\n\n# ${color('Installing project dependencies ...')}`)
   console.log('# ========================\n')
-  return runCommand(executable, ['install'], {
+  return runCommand(executable, ['install', 'run dev'], {
     cwd,
   })
 }
@@ -75,7 +75,7 @@ To get started:
   ${yellow(
     `${data.inPlace ? '' : `cd ${data.destDirName}\n  `}${installMsg(
       data
-    )}${lintMsg(data)}npm run dev`
+    )}${lintMsg(data)}`
   )}
   
 Documentation can be found at https://vuejs-templates.github.io/webpack
@@ -92,7 +92,7 @@ function lintMsg(data) {
   return !data.autoInstall &&
     data.lint &&
     lintStyles.indexOf(data.lintConfig) !== -1
-    ? 'npm run lint -- --fix (or for yarn: yarn run lint --fix)\n  '
+    ? 'npm run lint -- --fix\n  '
     : ''
 }
 
@@ -102,7 +102,7 @@ function lintMsg(data) {
  * @param {Object} data Data from the questionnaire
  */
 function installMsg(data) {
-  return !data.autoInstall ? 'npm install (or if using yarn: yarn)\n  ' : ''
+  return !data.autoInstall ? 'npm install\n  ' : ''
 }
 
 /**
