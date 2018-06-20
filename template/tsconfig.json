@@ -28,7 +28,6 @@
 	"emitDecoratorMetadata": true,
 	"noEmitOnError": true,
 	"noImplicitThis": true,
-	"noUnusedLocals": true,
 	"strictNullChecks": true,
     "lib": [
       "dom",
