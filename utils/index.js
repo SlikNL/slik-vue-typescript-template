@@ -50,7 +50,10 @@ exports.runLintFix = function runLintFix(cwd, data, color) {
       )}`
     )
     console.log('# ========================\n')
-    const args = ['run', 'dev']
+    const args =
+      data.autoInstall === 'npm'
+        ? ['run', 'lint', '--', '--fix']
+        : ['run', 'lint', '--fix']
     return runCommand(data.autoInstall, args, {
       cwd,
     })
@@ -99,7 +102,7 @@ function lintMsg(data) {
  * @param {Object} data Data from the questionnaire
  */
 function installMsg(data) {
-  return !data.autoInstall ? 'npm install\n  ' : ''
+  return !data.autoInstall ? 'npm install\n npm run dev' : ''
 }
 
 /**
