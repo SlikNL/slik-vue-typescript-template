@@ -20,7 +20,7 @@ vue init lavandongen/vue-typescript-template `<project-name>`
 Example:
 
 ``` bash
-$ vue init lavandongen/vue-typescript-template my-project
+$ vue init SlikNL/slik-vue-typescript-template my-project
 ```
 
 The above command downloads the template and makes a new project at `./my-project/`.Then follow the insctructions in your terminal and choose whether or not you want the project to be started automatically. If you choose not to use that, or you come back to the project, you can use the following command to get started (if you have not yet installed with npm, remember to do so with `npm install`):
