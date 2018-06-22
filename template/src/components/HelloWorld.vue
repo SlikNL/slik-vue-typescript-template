@@ -31,5 +31,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
+	// referencing main.less to get acces toa ll the variables
+	@import (reference) 'less/main';
+
 	@import '../less/components/HelloWorld';
 </style>
